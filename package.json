@@ -1,0 +1,15 @@
+{
+  "name": "chatterbox",
+  "version": "0.0.1",
+  "main": "server/basic-server.js",
+  "author": "MakerSquare",
+  "license": "Copyright 2015, MakerSquare. All rights reserved.",
+  "devDependencies": {
+    "request": "^2.34.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "underscore": "^1.8.3"
+  }
+}
