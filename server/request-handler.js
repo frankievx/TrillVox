@@ -11,7 +11,7 @@ var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use('/main.js', browserify('./client/main.js', { transform: ["reactify"] } ))
+app.use('/main.js', browserify('./client/js/main.js', { transform: ["reactify"] } ))
 app.use(express.static(path.join(__dirname,"../client")));
 
 

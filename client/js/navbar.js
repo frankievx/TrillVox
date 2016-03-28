@@ -15,17 +15,3 @@ var NavBar = React.createClass({
 		);
 	}
 })
-
-var SCwidget = Reach.createClass({
-	render: function() {
-		return (
-				<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
-			)
-	}
-})
-
-
-ReactDOM.render(
-  <NavBar />,
-  document.getElementById('app-container')
-);
