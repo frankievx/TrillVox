@@ -1,15 +1,23 @@
 {
-  "name": "chatterbox",
+  "name": "TrillVox",
   "version": "0.0.1",
-  "main": "server/basic-server.js",
-  "author": "MakerSquare",
-  "license": "Copyright 2015, MakerSquare. All rights reserved.",
+  "main": "server/mongo-server.js",
+  "author": "Francis Vithayathil",
   "devDependencies": {
     "request": "^2.34.0"
   },
   "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
     "body-parser": "^1.15.0",
+    "browserify-middleware": "^7.0.0",
     "express": "^4.13.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "reactify": "^1.1.1",
     "underscore": "^1.8.3"
+  },
+  "browserify": {
+    "transform": ["reactify"]
   }
 }
