@@ -1,7 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var article = React
 var articleTitle = React.createClass({
 	render: function() {
 

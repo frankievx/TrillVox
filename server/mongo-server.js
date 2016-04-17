@@ -11,10 +11,17 @@ var server = http.createServer(requestHandler.app);
 
 MongoClient.connect("mongodb://localhost:27017/trillvox", function(err, db) {
 	if(!err) {
-		console.log('we are connected'); 
+		console.log('we are connected');
 		db.createCollection('test');
-		collection = db.collection('test');
-		collection.insert({stuff: 12, string: 'this should work'});
+		// collection = db.collection('test');
+		// collection.insert({stuff: 12, string: 'this should work'});
+		// exports.test = collection.find();
+
+		db.collection('articles').find().toArray().then(function(data) {
+			// console.log(data);
+			exports.articles = data;
+		} );
+
 	}
 	else {
 		console.log('error connecting to mongo')
@@ -24,7 +31,7 @@ MongoClient.connect("mongodb://localhost:27017/trillvox", function(err, db) {
 server.listen(port, function(err) {
 	if(err) {
 		console.log('server listening err', err);
-	} 
+	}
 	else {
 		console.log('server is listening');
 	}

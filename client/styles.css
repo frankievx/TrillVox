@@ -1,0 +1,65 @@
+header {
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 48px;
+  border-bottom: black solid 2px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(255,255,255,0.7);
+  opacity: 25%;
+}
+
+hr {
+  width: 80%;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+h3 {
+  margin-top: 5px;
+}
+
+.article {
+  max-width: 60%;
+  margin: 0 auto;
+  background: white;
+  z-index: 1;
+}
+.articleArtist {
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-size:28px;
+}
+.articleTitle {
+  font-family: 'Kotta One', serif;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+.articleText {
+  font-family: 'EB Garamond', serif;
+  width: 75%;
+  margin: 0 auto;
+  font-size:20px;
+  padding-bottom: 5%;
+  line-height: 150%
+}
+
+.articleList {
+  padding-top: 5.5%;
+}
+
+.player {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.articleBackground{
+  background-size: cover;
+}
+
+
+

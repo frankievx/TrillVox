@@ -5,6 +5,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var requests = require('./requests.js');
 var browserify = require('browserify-middleware');
+// var reactify = require('reactify');
 
 var app = express();
 
@@ -18,5 +19,8 @@ app.get('/', function(req, res) {
 	console.log("getting index is working")
 	requests.serveAssets(req, res);
 });
+app.get('/articles', function(req, res) {
+  requests.serveArticles(req,res);
+})
 
 exports.app = app;
