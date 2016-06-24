@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var db = require('mongodb').Db;
 var MongoClient = require('mongodb').MongoClient;
 
-var port = 3000;
+var port = 8080;
 var ip = '127.0.0.1';
 var server = http.createServer(requestHandler.app);
 
